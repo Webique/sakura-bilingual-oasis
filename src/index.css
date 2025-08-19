@@ -1,42 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Sakura Design System - Premium Beige Aesthetics for Single-Use Towels B2B */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Sakura Brand Colors - Beige & Gold Theme */
+    --background: 42 28% 96%; /* Beige Sand #F5F0E6 */
+    --foreground: 30 8% 20%; /* Dark Warm Brown */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%; /* Cream White */
+    --card-foreground: 30 8% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 30 8% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 43 100% 50%; /* Gold #FFB000 */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 42 28% 96%; /* Beige Sand */
+    --secondary-foreground: 30 8% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 36 17% 85%; /* Warm Taupe Gray #D6CCC2 */
+    --muted-foreground: 30 8% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 43 100% 50%; /* Gold Accent */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 36 17% 85%;
+    --input: 36 17% 85%;
+    --ring: 43 100% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(42, 28%, 96%) 0%, hsl(0, 0%, 100%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%) 0%, hsl(42, 28%, 98%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(43, 100%, 50%) 0%, hsl(43, 100%, 55%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(43, 100%, 50% / 0.1);
+    --shadow-elegant: 0 8px 30px hsl(30, 8%, 20% / 0.08);
+    --shadow-gold: 0 4px 20px hsl(43, 100%, 50% / 0.2);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +116,116 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+    font-family: 'Inter', 'Noto Sans Arabic', sans-serif;
+  }
+
+  /* RTL Support */
+  [dir="rtl"] {
+    font-family: 'Noto Sans Arabic', 'Inter', sans-serif;
+  }
+
+  /* Typography Classes */
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .font-arabic {
+    font-family: 'Noto Sans Arabic', sans-serif;
+  }
+
+  /* RTL/LTR Classes */
+  .rtl {
+    direction: rtl;
+    text-align: right;
+  }
+
+  .ltr {
+    direction: ltr;
+    text-align: left;
+  }
+}
+
+@layer components {
+  /* Hero Button Variants */
+  .btn-hero {
+    @apply bg-primary text-primary-foreground px-8 py-4 rounded-lg font-medium;
+    @apply hover:shadow-gold transition-all duration-300;
+    @apply hover:scale-105 hover:bg-primary/90;
+  }
+
+  .btn-hero-outline {
+    @apply border-2 border-primary text-primary px-8 py-4 rounded-lg font-medium;
+    @apply hover:bg-primary hover:text-primary-foreground transition-all duration-300;
+    @apply hover:scale-105;
+  }
+
+  /* Card Styles */
+  .card-elegant {
+    @apply bg-card rounded-xl p-6 shadow-elegant;
+    @apply hover:shadow-gold transition-all duration-300;
+    @apply hover:-translate-y-1;
+  }
+
+  .card-commitment {
+    @apply bg-gradient-to-br from-card to-secondary/50;
+    @apply border border-muted rounded-xl p-8 text-center;
+    @apply hover:shadow-gold hover:border-primary/30 transition-all duration-300;
+    @apply hover:-translate-y-2;
+  }
+
+  /* Animation Classes */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-soft {
+    animation: pulseSoft 2s ease-in-out infinite;
+  }
+
+  /* Gradient Backgrounds */
+  .bg-hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .bg-card-gradient {
+    background: var(--gradient-card);
+  }
+
+  .bg-gold-gradient {
+    background: var(--gradient-gold);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulseSoft {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
   }
 }

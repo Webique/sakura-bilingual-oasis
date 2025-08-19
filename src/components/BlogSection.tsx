@@ -108,31 +108,12 @@ const BlogSection = () => {
                 {post.excerpt}
               </p>
 
-              {/* Read More Link */}
-              <Button
-                variant="ghost"
-                className={`group/btn p-0 h-auto text-primary hover:text-primary/80 ${
-                  isRTL ? 'flex-row-reverse' : ''
-                }`}
-              >
-                <span className={isRTL ? 'font-arabic' : 'font-inter'}>
-                  {isRTL ? 'اقرأ المزيد' : 'Read More'}
-                </span>
-                <ArrowIcon className="h-4 w-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
-              </Button>
+
             </article>
           ))}
         </div>
 
-        {/* View All Button */}
-        <div className="text-center mt-12">
-          <Button className="btn-hero">
-            <span className={isRTL ? 'font-arabic' : 'font-inter'}>
-              {isRTL ? 'عرض جميع المقالات' : 'View All Articles'}
-            </span>
-            <ArrowIcon className="ml-2 h-5 w-5" />
-          </Button>
-        </div>
+
       </div>
     </section>
   );

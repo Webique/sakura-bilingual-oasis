@@ -59,7 +59,7 @@ const CommitmentsSection = () => {
                 }}
               >
                 {/* Icon */}
-                <div className="bg-gold-gradient w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-gold">
+                <div className="bg-accent-gradient w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-accent">
                   <IconComponent className="h-8 w-8 text-white" />
                 </div>
 

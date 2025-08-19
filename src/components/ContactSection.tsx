@@ -24,8 +24,8 @@ const ContactSection = () => {
             {/* Phone Card */}
             <div className="group rounded-2xl border border-border bg-background p-6 shadow-sm transition hover:shadow-md">
               <div className="flex items-center gap-4">
-                <div className="rounded-full bg-primary/10 p-3">
-                  <Phone className="h-6 w-6 text-primary" />
+                <div className="rounded-full bg-accent-gradient p-3">
+                  <Phone className="h-6 w-6 text-white" />
                 </div>
                 <div className={`min-w-0 ${isRTL ? 'text-right' : 'text-left'}`}>
                   <p className="text-sm text-muted-foreground">{isRTL ? 'الهاتف' : 'Phone'}</p>
@@ -39,8 +39,8 @@ const ContactSection = () => {
             {/* Email Card */}
             <div className="group rounded-2xl border border-border bg-background p-6 shadow-sm transition hover:shadow-md">
               <div className="flex items-center gap-4">
-                <div className="rounded-full bg-primary/10 p-3">
-                  <Mail className="h-6 w-6 text-primary" />
+                <div className="rounded-full bg-accent-gradient p-3">
+                  <Mail className="h-6 w-6 text-white" />
                 </div>
                 <div className={`min-w-0 ${isRTL ? 'text-right' : 'text-left'}`}>
                   <p className="text-sm text-muted-foreground">{isRTL ? 'البريد الإلكتروني' : 'Email'}</p>
@@ -55,9 +55,9 @@ const ContactSection = () => {
             <div className="group rounded-2xl border border-border bg-background p-6 shadow-sm transition hover:shadow-md">
               <div className="flex items-center">
                 <div className={`flex items-center gap-4 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
-                  <div className="rounded-full bg-primary/10 p-3">
-                    <Instagram className="h-6 w-6 text-primary" />
-                  </div>
+                                  <div className="rounded-full bg-accent-gradient p-3">
+                  <Instagram className="h-6 w-6 text-white" />
+                </div>
                   <p className="text-sm text-muted-foreground">{isRTL ? 'وسائل التواصل' : 'Social'}</p>
                 </div>
                 <div className={`flex items-center gap-3 ${isRTL ? 'w-full justify-end' : 'ml-auto'}`}>

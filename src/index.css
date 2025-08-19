@@ -43,12 +43,13 @@
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(42, 28%, 96%) 0%, hsl(0, 0%, 100%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%) 0%, hsl(42, 28%, 98%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(43, 100%, 50%) 0%, hsl(43, 100%, 55%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(45, 93%, 85%) 0%, hsl(45, 93%, 90%) 100%);
+    --accent-dark: hsl(45, 93%, 70%);
 
     /* Shadows */
-    --shadow-soft: 0 4px 20px hsl(43, 100%, 50% / 0.1);
+    --shadow-soft: 0 4px 20px hsl(45, 93%, 85% / 0.1);
     --shadow-elegant: 0 8px 30px hsl(30, 8%, 20% / 0.08);
-    --shadow-gold: 0 4px 20px hsl(43, 100%, 50% / 0.2);
+    --shadow-accent: 0 4px 20px hsl(45, 93%, 85% / 0.2);
 
     /* Animations */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -150,28 +151,28 @@
   /* Hero Button Variants */
   .btn-hero {
     @apply bg-primary text-primary-foreground px-8 py-4 rounded-lg font-medium;
-    @apply hover:shadow-gold transition-all duration-300;
-    @apply hover:scale-105 hover:bg-primary/90;
+    @apply hover:shadow-accent transition-all duration-300;
+    @apply hover:scale-105 hover:bg-accent-gradient;
   }
 
   .btn-hero-outline {
     @apply border-2 border-primary text-primary px-8 py-4 rounded-lg font-medium;
-    @apply hover:bg-primary hover:text-primary-foreground transition-all duration-300;
+    @apply hover:bg-accent-gradient hover:text-white transition-all duration-300;
     @apply hover:scale-105;
   }
 
   /* Card Styles */
   .card-elegant {
     @apply bg-card rounded-xl p-6 shadow-elegant;
-    @apply hover:shadow-gold transition-all duration-300;
-    @apply hover:-translate-y-1;
+    @apply hover:shadow-accent transition-all duration-300;
+    @apply hover:-translate-y-1 hover:bg-yellow-50;
   }
 
   .card-commitment {
     @apply bg-gradient-to-br from-card to-secondary/50;
     @apply border border-muted rounded-xl p-8 text-center;
-    @apply hover:shadow-gold hover:border-primary/30 transition-all duration-300;
-    @apply hover:-translate-y-2;
+    @apply hover:shadow-accent hover:border-yellow-300 transition-all duration-300;
+    @apply hover:-translate-y-2 hover:bg-yellow-50;
   }
 
   /* Animation Classes */
@@ -196,8 +197,16 @@
     background: var(--gradient-card);
   }
 
-  .bg-gold-gradient {
-    background: var(--gradient-gold);
+  .bg-accent-gradient {
+    background: var(--gradient-accent);
+  }
+
+  /* Mobile hero background positioning */
+  @media (max-width: 768px) {
+    .bg-hero-mobile {
+      background-position: center center !important;
+      background-size: 100% auto !important;
+    }
   }
 }
 

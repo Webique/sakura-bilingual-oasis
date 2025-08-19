@@ -58,7 +58,6 @@ const BlogSection = () => {
           }`}>
             {t('blog.subtitle')}
           </p>
-          <div className="w-24 h-1 bg-primary mx-auto rounded-full mt-6"></div>
         </div>
 
         {/* Blog Grid */}

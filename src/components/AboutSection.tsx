@@ -25,12 +25,7 @@ const AboutSection = () => {
             </p>
           </div>
 
-          {/* Decorative Elements */}
-          <div className="mt-12 flex justify-center space-x-4 opacity-30">
-            <div className="w-16 h-1 bg-primary rounded-full"></div>
-            <div className="w-8 h-1 bg-primary/60 rounded-full"></div>
-            <div className="w-4 h-1 bg-primary/40 rounded-full"></div>
-          </div>
+          
         </div>
       </div>
     </section>

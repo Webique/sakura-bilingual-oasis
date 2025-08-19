@@ -44,7 +44,6 @@ const CommitmentsSection = () => {
           }`}>
             {t('commitments.title')}
           </h2>
-          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
         </div>
 
         {/* Commitments Grid */}
@@ -82,18 +81,7 @@ const CommitmentsSection = () => {
           })}
         </div>
 
-        {/* Bottom Decorative Element */}
-        <div className="mt-16 flex justify-center">
-          <div className="flex space-x-2">
-            {[...Array(5)].map((_, i) => (
-              <div
-                key={i}
-                className="w-3 h-3 bg-primary/30 rounded-full animate-pulse"
-                style={{ animationDelay: `${i * 0.2}s` }}
-              ></div>
-            ))}
-          </div>
-        </div>
+        
       </div>
     </section>
   );

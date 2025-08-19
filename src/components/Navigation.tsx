@@ -29,9 +29,9 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <div className={`text-2xl font-bold text-primary ${isRTL ? 'font-arabic' : 'font-inter'}`}>
-              {language === 'ar' ? 'ساكورا' : 'Sakura'}
-            </div>
+            <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('#home'); }} className="block">
+              <img src="/lovable-uploads/logo.png" alt="Sakura" className="h-8 md:h-9 w-auto" />
+            </a>
           </div>
 
           {/* Desktop Navigation */}

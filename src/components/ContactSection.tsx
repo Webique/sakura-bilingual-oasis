@@ -84,12 +84,7 @@ const ContactSection = () => {
             </div>
           </div>
 
-          {/* Tax Number */}
-          <div className="mt-8 rounded-xl border border-border bg-background p-4 text-center">
-            <p className={`${isRTL ? 'font-arabic' : 'font-inter'} text-sm text-muted-foreground`}>
-              {isRTL ? 'الرقم الضريبي:' : 'Tax Number:'} 100241115596214
-            </p>
-          </div>
+
         </div>
       </div>
     </section>

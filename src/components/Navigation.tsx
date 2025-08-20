@@ -80,36 +80,48 @@ const Navigation = () => {
       </div>
 
       {/* Mobile Navigation */}
-      {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-card border-t border-border">
-            {navItems.map((item) => (
+      <div className={`md:hidden transition-all duration-500 ease-in-out ${
+        isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+      }`}>
+        <div className="bg-card/95 backdrop-blur-xl border-t border-border/50 shadow-2xl">
+          <div className="px-6 py-6 space-y-4">
+            {/* Navigation Items */}
+            {navItems.map((item, index) => (
               <button
                 key={item.key}
                 onClick={() => scrollToSection(item.href)}
-                className={`block px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors duration-200 w-full text-${isRTL ? 'right' : 'left'} ${
-                  isRTL ? 'font-arabic' : 'font-inter'
+                className={`group w-full text-left px-4 py-4 rounded-xl bg-background/50 hover:bg-accent-gradient hover:text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${
+                  isRTL ? 'font-arabic text-right' : 'font-inter text-left'
                 }`}
+                style={{
+                  animationDelay: `${index * 100}ms`,
+                  animation: isOpen ? 'slideInUp 0.5s ease-out forwards' : 'none'
+                }}
               >
-                {t(item.key)}
+                <span className="text-lg font-semibold text-foreground group-hover:text-white transition-colors duration-300">
+                  {t(item.key)}
+                </span>
+                <div className="mt-1 h-0.5 bg-gradient-to-r from-transparent via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 origin-left"></div>
               </button>
             ))}
-            <div className="px-3 py-2">
+            
+            {/* Language Toggle */}
+            <div className="pt-4 border-t border-border/30">
               <Button
                 onClick={toggleLanguage}
                 variant="outline"
-                size="sm"
-                className="flex items-center space-x-2 w-full justify-center"
+                size="lg"
+                className="w-full bg-background/80 hover:bg-accent-gradient hover:text-white hover:border-accent-gradient transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
               >
-                <Globe className="h-4 w-4" />
-                <span className="font-medium">
+                <Globe className="h-5 w-5 mr-3" />
+                <span className="font-semibold text-lg">
                   {language === 'en' ? 'العربية' : 'English'}
                 </span>
               </Button>
             </div>
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 };

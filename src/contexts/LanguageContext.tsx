@@ -45,7 +45,7 @@ const translations = {
     
     // Blog
     'blog.title': 'The Sakura Blog',
-    'blog.subtitle': 'Everything about single-use towels: hygiene insights, production standards, and industry updates.',
+    'blog.subtitle': 'All about single-use towels: hygiene insights, production standards, and industry updates.',
     
     // Contact
     'contact.title': 'Get in Touch for Supply Contracts',
@@ -94,7 +94,7 @@ const translations = {
     
     // Blog
     'blog.title': 'مدونة ساكورا',
-    'blog.subtitle': 'كل ما يخص المناشف أحادية الاستخدام: نصائح النظافة، معايير الإنتاج، وآخر مستجدات القطاع.',
+    'blog.subtitle': 'كل شيء عن المناشف للاستخدام الواحد: رؤى النظافة، معايير الإنتاج، وتحديثات الصناعة.',
     
     // Contact
     'contact.title': 'تواصل معنا لعقود التوريد',

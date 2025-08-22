@@ -5,7 +5,7 @@ const AboutSection = () => {
   const { isRTL, t } = useLanguage();
 
   return (
-    <section id="about" className="py-0 md:py-20 bg-background">
+    <section id="about" className="py-0 md:py-20 pb-8 md:pb-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           

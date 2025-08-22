@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-import { Calendar, ArrowRight, ArrowLeft, Clock, ChevronDown, ChevronUp } from 'lucide-react';
+import React from 'react';
+import { Calendar, ArrowRight, Clock } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 
 const BlogSection = () => {
   const { isRTL, t } = useLanguage();
-  const [expandedPost, setExpandedPost] = useState<number | null>(null);
+  const navigate = useNavigate();
 
   // Sample blog posts
   const blogPosts = [
@@ -74,8 +75,6 @@ const BlogSection = () => {
     }
   ];
 
-  const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
-
   return (
     <section id="blog" className="py-20 bg-card">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -99,17 +98,18 @@ const BlogSection = () => {
           {blogPosts.map((post, index) => (
             <article
               key={post.id}
-              className="bg-card rounded-xl p-6 shadow-elegant"
+              className="bg-card rounded-xl p-6 shadow-elegant hover:shadow-lg transition-shadow duration-300 cursor-pointer group"
               style={{
                 animationDelay: `${index * 0.1}s`,
               }}
+              onClick={() => post.fullContent && navigate(`/blog/${post.id}`)}
             >
               {/* Blog Image */}
               <div className="relative overflow-hidden rounded-lg mb-6">
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   style={{
                     objectPosition: post.id === 2 ? 'center 20%' : 'center center'
                   }}
@@ -131,7 +131,7 @@ const BlogSection = () => {
               </div>
 
               {/* Blog Title */}
-              <h3 className={`text-xl font-semibold text-foreground mb-2 ${
+              <h3 className={`text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors ${
                 isRTL ? 'font-arabic text-right' : 'font-inter text-left'
               }`}>
                 {post.title}
@@ -155,135 +155,25 @@ const BlogSection = () => {
 
               {/* Read More Button */}
               {post.fullContent && (
-                                  <Button
-                    onClick={() => setExpandedPost(expandedPost === post.id ? null : post.id)}
-                    variant="ghost"
-                    className={`p-0 h-auto text-primary hover:text-primary/80 transition-all duration-300 ${
-                      isRTL ? 'flex-row-reverse' : ''
-                    }`}
-                  >
+                <Button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    navigate(`/blog/${post.id}`);
+                  }}
+                  variant="outline"
+                  className={`w-full group/btn hover:bg-primary hover:text-white transition-colors duration-300 ${
+                    isRTL ? 'flex-row-reverse' : ''
+                  }`}
+                >
                   <span className={isRTL ? 'font-arabic' : 'font-inter'}>
-                    {expandedPost === post.id 
-                      ? (isRTL ? 'إخفاء' : 'Show Less') 
-                      : (isRTL ? 'اقرأ المزيد' : 'Read More')
-                    }
+                    {isRTL ? 'اقرأ المزيد' : 'Read More'}
                   </span>
-                  {expandedPost === post.id ? (
-                    <ChevronUp className="h-4 w-4 ml-2 group-hover/btn:scale-110 transition-transform" />
-                  ) : (
-                    <ChevronDown className="h-4 w-4 ml-2 group-hover/btn:scale-110 transition-transform" />
-                  )}
+                  <ArrowRight className={`h-4 w-4 ${isRTL ? 'ml-2 rotate-180' : 'mr-2'}`} />
                 </Button>
               )}
-
-              {/* Expanded Content */}
-              {expandedPost === post.id && post.fullContent && (
-                <div className="mt-6 space-y-6 animate-fade-in-up">
-                  {/* Intro */}
-                  <p className={`text-muted-foreground leading-relaxed ${
-                    isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                  }`}>
-                    {post.fullContent.intro}
-                  </p>
-
-                  {/* Content sections - handle different structures */}
-                  {post.fullContent.results ? (
-                    <>
-                      {/* Results for first blog */}
-                      <div className="bg-muted/30 rounded-lg p-4">
-                        <p className={`text-muted-foreground leading-relaxed whitespace-pre-line ${
-                          isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                        }`}>
-                          {post.fullContent.results}
-                        </p>
-                      </div>
-
-                      {/* Culture Image */}
-                      {post.cultureImage && (
-                        <div className="relative overflow-hidden rounded-lg">
-                          <img
-                            src={post.cultureImage}
-                            alt="Culture Test Results"
-                            className="w-full h-48 object-cover"
-                          />
-                        </div>
-                      )}
-
-                      {/* Why Matters */}
-                      <div className="bg-primary/5 rounded-lg p-4 border-l-4 border-primary">
-                        <p className={`text-foreground leading-relaxed whitespace-pre-line ${
-                          isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                        }`}>
-                          {post.fullContent.whyMatters}
-                        </p>
-                      </div>
-
-                      {/* SAKURA Offer */}
-                      <div className="bg-accent-gradient/10 rounded-lg p-4 border border-accent-gradient/20">
-                        <p className={`text-foreground leading-relaxed whitespace-pre-line ${
-                          isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                        }`}>
-                          {post.fullContent.sakuraOffer}
-                        </p>
-                      </div>
-                    </>
-                  ) : (
-                    <>
-                      {/* Problems for second blog */}
-                      <div className="bg-muted/30 rounded-lg p-4">
-                        <p className={`text-muted-foreground leading-relaxed whitespace-pre-line ${
-                          isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                        }`}>
-                          {post.fullContent.problems}
-                        </p>
-                      </div>
-
-                      {/* Solution */}
-                      <div className="bg-primary/5 rounded-lg p-4 border-l-4 border-primary">
-                        <p className={`text-foreground leading-relaxed whitespace-pre-line ${
-                          isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                        }`}>
-                          {post.fullContent.solution}
-                        </p>
-                      </div>
-
-                      {/* Benefits */}
-                      <div className="bg-accent-gradient/10 rounded-lg p-4 border border-accent-gradient/20">
-                        <p className={`text-foreground leading-relaxed whitespace-pre-line ${
-                          isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                        }`}>
-                          {post.fullContent.benefits}
-                        </p>
-                      </div>
-                    </>
-                  )}
-
-                  {/* Why Switch */}
-                  <div className="bg-muted/30 rounded-lg p-4">
-                    <p className={`text-muted-foreground leading-relaxed whitespace-pre-line ${
-                      isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                    }`}>
-                      {post.fullContent.whySwitch}
-                    </p>
-                  </div>
-
-                  {/* Takeaway */}
-                  <div className="bg-primary/5 rounded-lg p-4 border-l-4 border-primary">
-                    <p className={`text-foreground leading-relaxed whitespace-pre-line ${
-                      isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                    }`}>
-                      {post.fullContent.takeaway}
-                    </p>
-                  </div>
-                </div>
-              )}
-
-
             </article>
           ))}
         </div>
-
-
       </div>
     </section>
   );

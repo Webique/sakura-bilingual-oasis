@@ -32,16 +32,16 @@ const translations = {
     
     // Commitments
     'commitments.title': 'Our Commitments',
-    'commitment.responsibility.title': 'Commitment & Responsibility',
-    'commitment.responsibility.desc': 'We stand by our clients with responsibility and trust.',
-    'commitment.iso.title': 'ISO Certified',
-    'commitment.iso.desc': 'Certified to international ISO standards.',
+    'commitment.responsibility.title': 'Responsibility & Trust',
+    'commitment.responsibility.desc': 'We stand by our clients with reliability.',
+    'commitment.iso.title': 'Global Standards',
+    'commitment.iso.desc': 'ISO internationally certified.',
     'commitment.cruelty.title': 'Cruelty-Free',
-    'commitment.cruelty.desc': 'Our products are cruelty-free and ethically manufactured.',
+    'commitment.cruelty.desc': 'Produced with high ethics.',
     'commitment.eco.title': 'Eco-Friendly',
-    'commitment.eco.desc': 'Environmentally conscious, sustainable practices.',
-    'commitment.sterile.title': 'Manufactured in a Sterile Environment',
-    'commitment.sterile.desc': 'Produced in sterile, controlled facilities for maximum hygiene.',
+    'commitment.eco.desc': 'Sustainable production.',
+    'commitment.sterile.title': 'Sterile Manufacturing',
+    'commitment.sterile.desc': 'Made in controlled sterile facilities.',
     
     // Blog
     'blog.title': 'The Sakura Blog',
@@ -77,24 +77,24 @@ const translations = {
     
     // About Section
     'about.title': 'عن ساكورا',
-    'about.content': 'ساكورا مورد متخصص في المناشف أحادية الاستخدام عالية الجودة، تخدم قطاعات الضيافة والرعاية الصحية واللياقة. تُصنع منتجاتنا في بيئات معقمة لضمان أعلى مستويات النظافة والسلامة والالتزام بالمعايير العالمية. نعمل فقط عبر عقود التوريد، لنضمن لعملائنا الجودة والموثوقية والاحترافية.',
+    'about.content': 'ساكورا هي المورد الموثوق للمناشف ذات الاستخدام الواحد عالية الجودة، المصممة خصيصًا لتلبية احتياجات الشركات. يتم تصنيع منتجاتنا في مرافق معقمة ومتطورة، بما يضمن أعلى معايير النظافة والسلامة والالتزام بالمواصفات الدولية.\nنحن نعمل حصريًا عبر عقود توريد رسمية، ونقدّم لشركائنا خدمات احترافية تشمل التوصيل الموثوق وجودة ثابتة يمكن الاعتماد عليها.',
     
     // Commitments
     'commitments.title': 'التزاماتنا',
-    'commitment.responsibility.title': 'التزامنا ومسؤوليتنا',
-    'commitment.responsibility.desc': 'نقف مع عملائنا بروح المسؤولية والموثوقية.',
-    'commitment.iso.title': 'معتمد من الآيزو',
-    'commitment.iso.desc': 'معتمد وفقًا لمعايير الآيزو العالمية.',
+    'commitment.responsibility.title': 'مسؤولية وموثوقية',
+    'commitment.responsibility.desc': 'نقف مع عملائنا بكل التزام وثقة.',
+    'commitment.iso.title': 'معايير عالمية',
+    'commitment.iso.desc': 'معتمدون وفق الأيزو الدولي.',
     'commitment.cruelty.title': 'خالية من القسوة',
-    'commitment.cruelty.desc': 'منتجاتنا خالية من القسوة ومصنعة بأخلاقيات عالية.',
-    'commitment.eco.title': 'صديق للبيئة',
-    'commitment.eco.desc': 'عمليات صديقة للبيئة ومستدامة.',
-    'commitment.sterile.title': 'تصنع في بيئة معقمة',
-    'commitment.sterile.desc': 'تُصنع في بيئات معقمة ومضبوطة لضمان أقصى درجات النظافة.',
+    'commitment.cruelty.desc': 'مصنّعة بأخلاقيات عالية.',
+    'commitment.eco.title': 'صديقة للبيئة',
+    'commitment.eco.desc': 'عمليات إنتاج مستدامة.',
+    'commitment.sterile.title': 'تصنيع معقم',
+    'commitment.sterile.desc': 'مرافق معقمة لضمان النظافة',
     
     // Blog
     'blog.title': 'مدونة ساكورا',
-    'blog.subtitle': 'كل شيء عن المناشف للاستخدام الواحد: رؤى النظافة، معايير الإنتاج، وتحديثات الصناعة.',
+    'blog.subtitle': 'كل ما تحتاج معرفته عن المناشف ذات الاستخدام الواحد: حول النظافة، معايير الإنتاج، وأحدث مستجدات وتحديات صناعة المناشف',
     
     // Contact
     'contact.title': 'تواصل معنا لعقود التوريد',

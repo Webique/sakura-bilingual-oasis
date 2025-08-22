@@ -12,25 +12,25 @@ const BlogPost = () => {
   // Blog posts data
   const blogPosts = {
     1: {
-      title: isRTL ? 'ما الذي يوجد حقاً على منشفتك؟' : 'What\'s Really on Your Towel?',
-      subtitle: isRTL ? 'اختبار ثقافة ساكورا يكشف نتائج صادمة' : 'SAKURA\'s Culture Test Reveals Shocking Results',
+      title: isRTL ? 'ما الذي يوجد حقًا على منشفتك؟' : 'What\'s Really on Your Towel?',
+      subtitle: isRTL ? 'اختبار ساكورا المخبري يكشف نتائج صادمة' : 'SAKURA\'s Culture Test Reveals Shocking Results',
       excerpt: isRTL 
-        ? 'معظمنا يثق بأن مناشفه نظيفة بعد غسلة بسيطة. تبدو طازجة ورائحتها جيدة - لذا نفترض أنها آمنة. لكن ماذا لو كان المنشف الذي تستخدمه كل يوم يخفي شيئاً لا يمكنك رؤيته؟'
+        ? 'أجرى فريق SAKURA اختبارًا على منشفة "نظيفة" بطريقة الزرع المخبري، وقد كشفت النتائج عن وجود مستعمرات بكتيرية بالرغم من أنها كانت تبدو نظيفة تمامًا.'
         : 'Most of us trust our towels to be clean after a simple wash. They look fresh, they smell fine—so we assume they\'re safe. But what if the towel you\'re using every day is hiding something you can\'t see?',
       content: isRTL ? {
-        intro: 'قرر فريق ساكورا اختبار منشف "نظيف" باستخدام طريقة الثقافة المخبرية. كانت النتائج مذهلة: تم العثور على مستعمرات بكتيرية متعددة، على الرغم من أن المنشف بدا نظيفاً تماماً.',
-        results: 'النتائج الصادمة\n• مستعمرات صفراء: على الأرجح المكورات العنقودية الذهبية، بكتيريا شائعة موجودة على الجلد والأسطح المنزلية.\n• مستعمرات بيضاء أو شاحبة: من المحتمل المكورات العنقودية الجلدية أو غيرها من النباتات الجلدية الطبيعية.\n• بقع برتقالية: تشير إلى بكتيريا ملونة مثل Serratia marcescens، غالباً ما تكون موجودة في البيئات الرطبة.',
-        whyMatters: 'لماذا هذا مهم؟\nفي كل مرة تستخدم منشفاً ملوثاً، تنقل بكتيريا وغبار وبقايا إلى بشرتك دون علمك. مع مرور الوقت، يمكن أن يسبب هذا تهيجاً، انسداد المسام، وحتى التهابات - خاصة إذا كان لديك بشرة حساسة أو عرضة لحب الشباب.',
-        sakuraOffer: 'ماذا تقدم ساكورا؟\nمناشف ساكورا مصنوعة من ألياف نباتية 100%، قابلة للتحلل الحيوي بالكامل، ومصممة للاستخدام الواحد فقط. هذا يعني أنك تستمتع دائماً بسطح نظيف ومعقم وصحي - لا بكتيريا مخفية، لا بقايا غسيل.',
-        whySwitch: 'لماذا التبديل؟\n• لأن بشرتك تستحق الأفضل\n• ساكورا تمنحك الراحة، بعيداً عن التلوث وبقايا الغسيل، مما يمنحك بشرة أكثر صحة.',
-        takeaway: 'الخلاصة\nبشرتك لا يجب أن تحارب البكتيريا المخفية في كل مرة تجفف وجهك. مع مناشف ساكورا للاستخدام الواحد، تحصل على النظافة والأمان وراحة البال - كل ذلك في تبديل بسيط واحد.\n• اكتشف الفرق مع ساكورا. بشرتك ستشكرك.'
+        intro: 'أجرى فريق SAKURA اختبارًا على منشفة "نظيفة" بطريقة الزرع المخبري، وقد كشفت النتائج عن وجود مستعمرات بكتيرية بالرغم من أنها كانت تبدو نظيفة تمامًا.',
+        results: '🧫 النتائج المفاجئة\n• المستعمرات الصفراء: يُحتمل أن تكون من نوع Staphylococcus aureus، وهي بكتيريا شائعة على الجلد والأسطح.\n• المستعمرات البيضاء أو الشاحبة: قد تكون من Staphylococcus epidermidis أو أنواع أخرى من الفلورا الجلدية المعتادة.\n• النقاط البرتقالية: قد تعود إلى بكتيريا مصبوغة مثل Serratia marcescens، تظهر عادة في الأماكن الرطبة.',
+        whyMatters: '❓ لماذا هذا الأمر مهم؟\nكل مرة تستخدم فيها منشفة ملوثة، تنقل البكتيريا والغبار والرواسب إلى بشرتك. هذا قد يؤدي إلى:\n• تهيّج البشرة.\n• انسداد المسام.\n• انتقال العدوى.\n\nوذلك خاصة للبشرة الحساسة أو المعرضة لحب الشباب.',
+        sakuraOffer: '🌿 ما الذي تقدمه SAKURA؟\nمناشف SAKURA مصنوعة من 100% من الألياف النباتية، وهي قابلة للتحلل الحيوي ومخصصة للاستخدام لمرة واحدة فقط.\nهذا يضمن أن تحصل على سطح جديد ونظيف في كل مرة.',
+        whySwitch: '🌸 لماذا عليك التبديل؟\n• لأن بشرتك تستحق الأفضل.\n• توفر لك راحة البال، بعيدًا عن التلوث أو رواسب الغسيل.\n• تمنحك بشرة أكثر صحة وسعادة.',
+        takeaway: '✨ الخلاصة\nاكتشف الفرق مع SAKURA. بشرتك ستشكرك.'
       } : {
-        intro: 'The SAKURA team decided to put a "clean" towel to the test using a laboratory culture method. The results were eye-opening: multiple bacterial colonies were found, even though the towel appeared spotless.',
-        results: 'The Shocking Results\n• Yellow colonies: Likely Staphylococcus aureus, a common bacterium found on skin and household surfaces.\n• White or pale colonies: Possibly Staphylococcus epidermidis or other natural skin flora.\n• Orange spots: Indicative of pigmented bacteria such as Serratia marcescens, often present in damp environments.',
-        whyMatters: 'Why Does This Matter?\nEvery time you use a contaminated towel, you unknowingly transfer bacteria, dust, and residue onto your skin. Over time, this can cause irritation, clogged pores, and even infections—especially if you have sensitive or acne-prone skin.',
-        sakuraOffer: 'What Does SAKURA Offer?\nSAKURA towels are made from 100% plant-based fibers, fully biodegradable, and designed for single use only. This means you always enjoy a fresh, clean, hygienic surface—no hidden bacteria, no laundry residue.',
-        whySwitch: 'Why Make the Switch?\n• Because your skin deserves the very best\n• Sakura provides you with comfort, away from contamination and laundry residue, giving you healthier skin.',
-        takeaway: 'The Takeaway\nYour skin shouldn\'t have to fight hidden bacteria every time you dry your face. With SAKURA single-use towels, you get hygiene, safety, and peace of mind—all in one simple switch.\n• Discover the difference with SAKURA. Your skin will thank you.'
+        intro: 'Most of us trust our towels to be clean after a simple wash. They look fresh, they smell fine—so we assume they\'re safe. But what if the towel you\'re using every day is hiding something you can\'t see?\n\nThe SAKURA team decided to put a "clean" towel to the test using a laboratory culture method. The results were eye-opening: multiple bacterial colonies were found, even though the towel appeared spotless.',
+        results: '🧫 The Shocking Results\n• Yellow colonies: Likely Staphylococcus aureus, a common bacterium found on skin and household surfaces.\n• White or pale colonies: Possibly Staphylococcus epidermidis or other natural skin flora.\n• Orange spots: Indicative of pigmented bacteria such as Serratia marcescens, often present in damp environments.',
+        whyMatters: '❓ Why Does This Matter?\nEvery time you use a contaminated towel, you unknowingly transfer bacteria, dust, and residue onto your skin. Over time, this can cause irritation, clogged pores, and even infections—especially if you have sensitive or acne-prone skin.',
+        sakuraOffer: '🌿 What Does SAKURA Offer?\nSAKURA towels are made from 100% plant-based fibers, fully biodegradable, and designed for single use only. This means you always enjoy a fresh, clean, hygienic surface—no hidden bacteria, no laundry residue.',
+        whySwitch: '🌸 Why Make the Switch?\n• Because your skin deserves the very best.\n• SAKURA provides you with comfort, away from contamination and laundry residue, giving you healthier skin.',
+        takeaway: '✨ The Takeaway\nYour skin shouldn\'t have to fight hidden bacteria every time you dry your face. With SAKURA single-use towels, you get hygiene, safety, and peace of mind—all in one simple switch.\n\n👉 Discover the difference with SAKURA. Your skin will thank you.'
       },
       date: isRTL ? '15 يناير 2025' : 'January 15, 2025',
       readTime: isRTL ? '5 دقائق' : '5 min read',
@@ -40,25 +40,25 @@ const BlogPost = () => {
       category: isRTL ? 'صحة ونظافة' : 'Health & Hygiene'
     },
     2: {
-      title: isRTL ? 'لماذا مناشف ساكورا للاستخدام الواحد أفضل من المناشف التقليدية' : 'Why SAKURA Single-Use Towels Are Better Than Traditional Towels',
-      subtitle: isRTL ? 'المشكلة مع المناشف التقليدية' : 'The Problem with Traditional Towels',
+      title: isRTL ? 'استهلاك واهتراء المناشف العادية مقارنة بمناشف ساكورا للاستخدام الواحد 🌿' : 'Why SAKURA Single-Use Towels Are Better Than Traditional Towels',
+      subtitle: isRTL ? '🧺 المناشف العادية: تكلفة خفية أكبر مما تتوقع' : '🧺 The Problem with Traditional Towels',
       excerpt: isRTL 
-        ? 'المناشف التقليدية قد تبدو ميسورة التكلفة، لكنها تأتي مع تكاليف مخفية ومخاطر صحية'
+        ? 'قد تبدو المناشف العادية خيارًا اقتصاديًا، لكن الواقع مختلف'
         : 'Traditional towels may seem affordable, but they come with hidden costs and health risks',
       content: isRTL ? {
-        intro: 'عند التفكير في المناشف العادية قد نراها خيارًا اقتصاديًا للوهلة الأولى، لكن الواقع مختلف:',
-        problems: '• الاستهلاك العالي: المناشف تحتاج إلى غسيل متكرر بعد كل استخدام، وهذا يعني استهلاك كميات هائلة من الماء والكهرباء والمنظفات.\n• اهتراء سريع: مع كثرة الغسيل والتعرض للمنظفات القوية، تبدأ الألياف بالضعف، وتظهر الروائح، وتقل جودتها بشكل ملحوظ.\n• التكلفة التراكمية: إذا حسبنا تكاليف شراء المناشف + الغسيل الدوري + استهلاك الطاقة والماء، نجد أن الفاتورة الشهرية تتضاعف دون أن نشعر.\n• مخاطر صحية: المناشف العادية تصبح بيئة مثالية لتكاثر البكتيريا والفطريات، خصوصًا مع الرطوبة وسوء التجفيف، مما يعرّض البشرة للحساسية أو البثور.',
-        solution: 'ساكورا: الحل الصحي والاقتصادي الذكي\nمناشف ساكورا للاستخدام الواحد صُممت لتضع حدًا لهذه المعاناة:',
-        benefits: '• نظافة مضمونة: كل منشفة جديدة ومعقمة، مما يعني وداعًا للبكتيريا والروائح العالقة.\n• بدون غسيل، بدون اهتراء: لا حاجة لغسل متكرر أو مواد تنظيف تضر بالبيئة والجيب.\n• اقتصادية على المدى الطويل: التوفير في الماء والكهرباء ومواد التنظيف يعوض تكلفة شراء المناشف، ويُقلل الجهد والوقت.\n• صديقة للبيئة: مناشف ساكورا قابلة للتحلل الحيوي بالكامل، فتمنحك راحة البال بأنك تحافظ على كوكبنا.\n• مظهر راقٍ وتجربة فاخرة: سواء في المنزل، العيادات، الصالونات أو الفنادق، تقدم ساكورا تجربة عناية مختلفة وفاخرة لعملائك أو لعائلتك.',
-        whySwitch: 'لماذا التبديل إلى ساكورا خطوة أذكى؟\n• لأنها توفّر المال على المدى البعيد.\n• لأنها تحافظ على صحتك وصحة عملائك.\n• لأنها تمنحك رفاهية الاستخدام الواحد دون قلق من الغسيل أو الروائح.\n• لأنها تحمي البيئة وتقلل من الاستهلاك غير الضروري للمياه والكهرباء.',
-        takeaway: 'المناشف العادية قد تبدو حلًا بسيطًا، لكنها تحمل تكاليف مخفية واستهلاك زائد. بينما مناشف ساكورا للاستخدام الواحد تمنحك النظافة، الفخامة، والراحة مع توفير اقتصادي وحماية للبيئة.\n• جرب ساكورا اليوم، واكتشف الفرق بنفسك'
+        intro: 'قد تبدو المناشف العادية خيارًا اقتصاديًا، لكن الواقع مختلف:',
+        problems: '• استهلاك عالي: تحتاج لغسيل متكرر بعد كل استخدام، ما يعني هدرًا للماء والكهرباء والمنظفات.\n• اهتراء سريع: مع كثرة الغسيل تبدأ الألياف بالضعف وتظهر الروائح.\n• مخاطر صحية: تصبح بيئة مثالية لتكاثر البكتيريا والفطريات، خصوصًا مع الرطوبة، مما يعرّض البشرة الحساسة أو المعرضة لحب الشباب لمشاكل إضافية.',
+        solution: 'ساكورا: الحل الصحي والاقتصادي الذكي 🌸\nمناشف ساكورا مصممة للاستخدام الواحد لتمنحك:',
+        benefits: '• نظافة مضمونة: كل منشفة جديدة ومعقمة، وداعًا للبكتيريا والروائح.\n• راحة ورفاهية: لا غسيل، لا مناشف بالية، لا قلق من التلوث.\n• صديقة للبيئة: قابلة للتحلل الحيوي، فتحافظ على كوكبنا.\n• مظهر فاخر: مثالية للمنازل، العيادات، الصالونات، الفنادق والمنتجعات.',
+        whySwitch: '✨ لماذا التبديل إلى ساكورا خطوة أذكى؟\n• لأنها توفر المال على المدى البعيد.\n• لأنها تحافظ على صحتك وصحة عملائك.\n• لأنها تمنحك رفاهية الاستخدام الواحد بنقاء دائم.\n• لأنها تحمي البيئة وتقلل من استهلاك الماء والكهرباء.',
+        takeaway: '🌍 جرب ساكورا اليوم\nالمناشف العادية قد تبدو حلًا بسيطًا، لكنها تحمل تكاليف خفية ومخاطر صحية.\nبينما مناشف ساكورا تمنحك النظافة، الفخامة، والراحة مع توفير اقتصادي وحماية للبيئة.\n\n🌸✨ جرّب ساكورا اليوم، واكتشف الفرق بنفسك'
       } : {
         intro: 'Traditional towels may seem affordable, but they come with hidden costs and health risks:',
         problems: '• Frequent washing wastes water, electricity, and detergents.\n• Towels wear out quickly and lose quality.\n• Damp fibers create a breeding ground for bacteria and fungi.\n• Extra laundry means higher monthly expenses.',
-        solution: 'The SAKURA Solution\nSAKURA single-use towels are made from 100% plant-based, biodegradable fibers. They are:',
+        solution: '🌸 The SAKURA Solution\nSAKURA single-use towels are made from 100% plant-based, biodegradable fibers. They are:',
         benefits: '• Hygienic: Fresh and sterile every time.\n• Convenient: No washing, no odors, no wear.\n• Cost-efficient: Save on laundry, water, and energy.\n• Eco-friendly: Sustainable and kind to the planet.\n• Premium: Perfect for spas, salons, clinics, gyms, hotels, and home use.',
-        whySwitch: 'Why Make the Switch?\n• Because they save money in the long run.\n• Because they protect your health and your clients\' health.\n• Because they give you the luxury of single-use without worry about washing or odors.\n• Because they protect the environment and reduce unnecessary consumption of water and electricity.',
-        takeaway: 'Traditional towels create waste, cost more, and carry hidden bacteria. With SAKURA single-use towels, you get hygiene, convenience, and eco-friendly luxury—all in one simple switch.\n• Upgrade to SAKURA today. Your skin—and the planet—will thank you.'
+        whySwitch: '🌍 Why Switch to SAKURA?\nTraditional towels create waste, cost more, and carry hidden bacteria. With SAKURA single-use towels, you get hygiene, convenience, and eco-friendly luxury—all in one simple switch.',
+        takeaway: '👉 Upgrade to SAKURA today. Your skin—and the planet—will thank you.'
       },
       date: isRTL ? '10 يناير 2025' : 'January 10, 2025',
       readTime: isRTL ? '7 دقائق' : '7 min read',
@@ -68,7 +68,7 @@ const BlogPost = () => {
     }
   };
 
-  const post = blogPosts[id as keyof typeof blogPosts];
+  const post = blogPosts[id as '1' | '2'];
 
   // Scroll to top when component mounts
   useEffect(() => {
@@ -196,147 +196,191 @@ const BlogPost = () => {
                 </div>
 
                 {/* Content sections - handle different structures */}
-                {post.id === 1 ? (
-                  <>
-                    {/* Results for first blog */}
-                    <div className="bg-muted/30 rounded-xl p-4 sm:p-6 border-l-4 border-primary">
-                      <h3 className={`text-lg sm:text-xl font-semibold text-foreground mb-3 sm:mb-4 ${
-                        isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                      }`}>
-                        {isRTL ? 'النتائج الصادمة' : 'The Shocking Results'}
-                      </h3>
-                      <p className={`text-sm sm:text-base text-muted-foreground leading-relaxed whitespace-pre-line ${
-                        isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                      }`}>
-                        {post.content.results}
-                      </p>
-                    </div>
-
-                    {/* Culture Image */}
-                    {post.cultureImage && (
-                      <div className="relative overflow-hidden rounded-xl my-6">
-                        <img
-                          src={post.cultureImage}
-                          alt="Culture Test Results"
-                          className="w-full h-48 sm:h-64 md:h-80 object-cover"
-                        />
-                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/80 to-transparent p-3 sm:p-4">
-                          <p className="text-xs sm:text-sm text-muted-foreground">
-                            {isRTL ? 'نتائج اختبار الثقافة المخبرية' : 'Laboratory culture test results'}
+                {(() => {
+                  // Debug logging
+                  console.log('Blog Post Key:', id);
+                  console.log('Blog Post Content:', post.content);
+                  
+                  if (id === '1') {
+                    // Type assertion for first blog post
+                    const firstBlog = post as typeof blogPosts[1];
+                    return (
+                      <>
+                        {/* Results for first blog */}
+                        <div className="bg-muted/30 rounded-xl p-4 sm:p-6 border-l-4 border-primary">
+                          <h3 className={`text-lg sm:text-xl font-semibold text-foreground mb-3 sm:mb-4 ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {isRTL ? 'النتائج الصادمة' : 'The Shocking Results'}
+                          </h3>
+                          <p className={`text-sm sm:text-base text-muted-foreground leading-relaxed whitespace-pre-line ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {firstBlog.content.results}
                           </p>
                         </div>
+
+                        {/* Culture Image */}
+                        {firstBlog.cultureImage && (
+                          <div className="relative overflow-hidden rounded-xl my-6">
+                            <img
+                              src={firstBlog.cultureImage}
+                              alt="Culture Test Results"
+                              className="w-full h-48 sm:h-64 md:h-80 object-cover"
+                            />
+                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/80 to-transparent p-3 sm:p-4">
+                              <p className="text-xs sm:text-sm text-muted-foreground">
+                                {isRTL ? 'نتائج اختبار الثقافة المخبرية' : 'Laboratory culture test results'}
+                              </p>
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Why Matters */}
+                        <div className="bg-primary/5 rounded-xl p-4 sm:p-6 border border-primary/20">
+                          <h3 className={`text-lg sm:text-xl font-semibold text-foreground mb-3 sm:mb-4 ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {isRTL ? 'لماذا هذا الأمر مهم؟' : 'Why Does This Matter?'}
+                          </h3>
+                          <p className={`text-sm sm:text-base text-foreground leading-relaxed whitespace-pre-line ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {firstBlog.content.whyMatters}
+                          </p>
+                        </div>
+
+                        {/* SAKURA Offer */}
+                        <div className="bg-accent-gradient/10 rounded-xl p-4 sm:p-6 border border-accent-gradient/20">
+                          <h3 className={`text-lg sm:text-xl font-semibold text-foreground mb-3 sm:mb-4 ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {isRTL ? 'ما الذي تقدمه SAKURA؟' : 'What Does SAKURA Offer?'}
+                          </h3>
+                          <p className={`text-sm sm:text-base text-foreground leading-relaxed whitespace-pre-line ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {firstBlog.content.sakuraOffer}
+                          </p>
+                        </div>
+
+                        {/* Why Switch */}
+                        <div className="bg-muted/30 rounded-xl p-4 sm:p-6">
+                          <h3 className={`text-lg sm:text-xl font-semibold text-foreground mb-3 sm:mb-4 ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {isRTL ? 'لماذا التبديل؟' : 'Why Make the Switch?'}
+                          </h3>
+                          <p className={`text-sm sm:text-base text-foreground leading-relaxed whitespace-pre-line ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {firstBlog.content.whySwitch}
+                          </p>
+                        </div>
+
+                        {/* Takeaway */}
+                        <div className="bg-primary/5 rounded-xl p-4 sm:p-6 border-l-4 border-primary">
+                          <h3 className={`text-lg sm:text-xl font-semibold text-foreground mb-3 sm:mb-4 ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {isRTL ? 'الخلاصة' : 'The Takeaway'}
+                          </h3>
+                          <p className={`text-sm sm:text-base text-foreground leading-relaxed whitespace-pre-line ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {firstBlog.content.takeaway}
+                          </p>
+                        </div>
+                      </>
+                    );
+                  } else if (id === '2') {
+                    // Type assertion for second blog post
+                    const secondBlog = post as typeof blogPosts[2];
+                    return (
+                      <>
+                        {/* Problems for second blog */}
+                        <div className="bg-muted/30 rounded-xl p-4 sm:p-6 border-l-4 border-primary">
+                          <h3 className={`text-lg sm:text-xl font-semibold text-foreground mb-3 sm:mb-4 ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {isRTL ? 'المشاكل الرئيسية' : 'Key Problems'}
+                          </h3>
+                          <p className={`text-sm sm:text-base text-muted-foreground leading-relaxed whitespace-pre-line ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {secondBlog.content.problems}
+                          </p>
+                        </div>
+
+                        {/* Solution */}
+                        <div className="bg-primary/5 rounded-xl p-4 sm:p-6 border border-primary/20">
+                          <h3 className={`text-lg sm:text-xl font-semibold text-foreground mb-3 sm:mb-4 ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {isRTL ? 'الحل' : 'The Solution'}
+                          </h3>
+                          <p className={`text-sm sm:text-base text-foreground leading-relaxed whitespace-pre-line ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {secondBlog.content.solution}
+                          </p>
+                        </div>
+
+                        {/* Benefits */}
+                        <div className="bg-accent-gradient/10 rounded-xl p-4 sm:p-6 border border-accent-gradient/20">
+                          <h3 className={`text-lg sm:text-xl font-semibold text-foreground mb-3 sm:mb-4 ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {isRTL ? 'المزايا الرئيسية' : 'Key Benefits'}
+                          </h3>
+                          <p className={`text-sm sm:text-base text-muted-foreground leading-relaxed whitespace-pre-line ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {secondBlog.content.benefits}
+                          </p>
+                        </div>
+
+                        {/* Why Switch */}
+                        <div className="bg-muted/30 rounded-xl p-4 sm:p-6">
+                          <h3 className={`text-lg sm:text-xl font-semibold text-foreground mb-3 sm:mb-4 ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {isRTL ? 'لماذا التبديل؟' : 'Why Make the Switch?'}
+                          </h3>
+                          <p className={`text-sm sm:text-base text-muted-foreground leading-relaxed whitespace-pre-line ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {secondBlog.content.whySwitch}
+                          </p>
+                        </div>
+
+                        {/* Takeaway */}
+                        <div className="bg-primary/5 rounded-xl p-4 sm:p-6 border-l-4 border-primary">
+                          <h3 className={`text-lg sm:text-xl font-semibold text-foreground mb-3 sm:mb-4 ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {isRTL ? 'الخلاصة' : 'The Takeaway'}
+                          </h3>
+                          <p className={`text-sm sm:text-base text-muted-foreground leading-relaxed whitespace-pre-line ${
+                            isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                          }`}>
+                            {secondBlog.content.takeaway}
+                          </p>
+                        </div>
+                      </>
+                    );
+                  } else {
+                    return (
+                      <div className="bg-muted/30 rounded-xl p-6">
+                        <p className={`text-muted-foreground leading-relaxed ${
+                          isRTL ? 'font-arabic text-right' : 'font-inter text-left'
+                        }`}>
+                          {isRTL ? 'محتوى المقال قيد التطوير' : 'Article content coming soon...'}
+                        </p>
                       </div>
-                    )}
-
-                    {/* Why Matters */}
-                    <div className="bg-primary/5 rounded-xl p-4 sm:p-6 border border-primary/20">
-                      <h3 className={`text-lg sm:text-xl font-semibold text-foreground mb-3 sm:mb-4 ${
-                        isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                      }`}>
-                        {isRTL ? 'لماذا هذا مهم؟' : 'Why Does This Matter?'}
-                      </h3>
-                      <p className={`text-sm sm:text-base text-foreground leading-relaxed whitespace-pre-line ${
-                        isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                      }`}>
-                        {post.content.whyMatters}
-                      </p>
-                    </div>
-
-                    {/* SAKURA Offer */}
-                    <div className="bg-accent-gradient/10 rounded-xl p-4 sm:p-6 border border-accent-gradient/20">
-                      <h3 className={`text-lg sm:text-xl font-semibold text-foreground mb-3 sm:mb-4 ${
-                        isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                      }`}>
-                        {isRTL ? 'ماذا تقدم ساكورا؟' : 'What Does SAKURA Offer?'}
-                      </h3>
-                      <p className={`text-sm sm:text-base text-foreground leading-relaxed whitespace-pre-line ${
-                        isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                      }`}>
-                        {post.content.sakuraOffer}
-                      </p>
-                    </div>
-                  </>
-                ) : post.id === 2 ? (
-                  <>
-                    {/* Problems for second blog */}
-                    <div className="bg-muted/30 rounded-xl p-4 sm:p-6 border-l-4 border-primary">
-                      <h3 className={`text-lg sm:text-xl font-semibold text-foreground mb-3 sm:mb-4 ${
-                        isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                      }`}>
-                        {isRTL ? 'المشاكل الرئيسية' : 'Key Problems'}
-                      </h3>
-                      <p className={`text-sm sm:text-base text-muted-foreground leading-relaxed whitespace-pre-line ${
-                        isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                      }`}>
-                        {post.content.problems}
-                      </p>
-                    </div>
-
-                    {/* Solution */}
-                    <div className="bg-primary/5 rounded-xl p-4 sm:p-6 border border-primary/20">
-                      <h3 className={`text-lg sm:text-xl font-semibold text-foreground mb-3 sm:mb-4 ${
-                        isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                      }`}>
-                        {isRTL ? 'الحل' : 'The Solution'}
-                      </h3>
-                      <p className={`text-sm sm:text-base text-foreground leading-relaxed whitespace-pre-line ${
-                        isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                      }`}>
-                        {post.content.solution}
-                      </p>
-                    </div>
-
-                    {/* Benefits */}
-                    <div className="bg-accent-gradient/10 rounded-xl p-4 sm:p-6 border border-accent-gradient/20">
-                      <h3 className={`text-lg sm:text-xl font-semibold text-foreground mb-3 sm:mb-4 ${
-                        isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                      }`}>
-                        {isRTL ? 'المزايا الرئيسية' : 'Key Benefits'}
-                      </h3>
-                      <p className={`text-sm sm:text-base text-foreground leading-relaxed whitespace-pre-line ${
-                        isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                      }`}>
-                        {post.content.benefits}
-                      </p>
-                    </div>
-                  </>
-                ) : (
-                  <div className="bg-muted/30 rounded-xl p-6">
-                    <p className={`text-muted-foreground leading-relaxed ${
-                      isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                    }`}>
-                      {isRTL ? 'محتوى المقال قيد التطوير' : 'Article content coming soon...'}
-                    </p>
-                  </div>
-                )}
-
-                {/* Why Switch */}
-                <div className="bg-muted/30 rounded-xl p-4 sm:p-6">
-                  <h3 className={`text-lg sm:text-xl font-semibold text-foreground mb-3 sm:mb-4 ${
-                    isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                  }`}>
-                    {isRTL ? 'لماذا التبديل؟' : 'Why Make the Switch?'}
-                  </h3>
-                  <p className={`text-sm sm:text-base text-muted-foreground leading-relaxed whitespace-pre-line ${
-                    isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                  }`}>
-                    {post.content.whySwitch}
-                  </p>
-                </div>
-
-                {/* Takeaway */}
-                <div className="bg-primary/5 rounded-xl p-4 sm:p-6 border-l-4 border-primary">
-                  <h3 className={`text-lg sm:text-xl font-semibold text-foreground mb-3 sm:mb-4 ${
-                    isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                  }`}>
-                    {isRTL ? 'الخلاصة' : 'The Takeaway'}
-                  </h3>
-                  <p className={`text-sm sm:text-base text-foreground leading-relaxed whitespace-pre-line ${
-                    isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-                  }`}>
-                    {post.content.takeaway}
-                  </p>
-                </div>
+                    );
+                  }
+                })()}
               </div>
 
               {/* Call to Action */}
@@ -355,7 +399,7 @@ const BlogPost = () => {
                   }
                 </p>
                 <Button 
-                  onClick={() => navigate('/#contact')}
+                  onClick={() => window.open(`https://wa.me/966557891155`, '_blank')}
                   className="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-2 sm:py-3 text-base sm:text-lg"
                 >
                   {isRTL ? 'تواصل معنا' : 'Contact Us'}
@@ -452,7 +496,7 @@ const BlogPost = () => {
                   }
                 </p>
                 <Button 
-                  onClick={() => navigate('/#contact')}
+                  onClick={() => window.open('https://www.instagram.com/Sakura.co1/', '_blank')}
                   className="w-full bg-primary hover:bg-primary/90 text-white h-8 sm:h-9 text-sm sm:text-base"
                 >
                   {isRTL ? 'اشترك الآن' : 'Subscribe Now'}

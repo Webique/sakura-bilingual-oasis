@@ -40,7 +40,7 @@ const BlogSection = () => {
     {
       id: 2,
       title: isRTL ? 'استهلاك واهتراء المناشف العادية مقارنة بمناشف ساكورا للاستخدام الواحد 🌿' : 'Why SAKURA Single-Use Towels Are Better Than Traditional Towels',
-      subtitle: isRTL ? 'المناشف العادية: تكلفة خفية أكبر مما تتوقع 🧺' : '🧺 The Problem with Traditional Towels',
+      subtitle: isRTL ? 'المناشف العادية: تكلفة خفية أكبر مما تتوقع 🧺' : 'The Problem with Traditional Towels 🧺',
       excerpt: isRTL 
         ? 'قد تبدو المناشف العادية خيارًا اقتصاديًا، لكن الواقع مختلف'
         : 'Traditional towels may seem affordable, but they come with hidden costs and health risks',

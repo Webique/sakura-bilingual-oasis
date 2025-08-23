@@ -14,9 +14,6 @@ const BlogPost = () => {
     1: {
       title: isRTL ? 'ما الذي يوجد حقًا على منشفتك؟' : 'What\'s Really on Your Towel?',
       subtitle: isRTL ? 'اختبار ساكورا المخبري يكشف نتائج صادمة' : 'SAKURA\'s Culture Test Reveals Shocking Results',
-      excerpt: isRTL 
-        ? 'أجرى فريق SAKURA اختبارًا على منشفة "نظيفة" بطريقة الزرع المخبري، وقد كشفت النتائج عن وجود مستعمرات بكتيرية بالرغم من أنها كانت تبدو نظيفة تمامًا.'
-        : 'Most of us trust our towels to be clean after a simple wash. They look fresh, they smell fine—so we assume they\'re safe. But what if the towel you\'re using every day is hiding something you can\'t see?',
       content: isRTL ? {
         intro: 'أجرى فريق SAKURA اختبارًا على منشفة "نظيفة" بطريقة الزرع المخبري، وقد كشفت النتائج عن وجود مستعمرات بكتيرية بالرغم من أنها كانت تبدو نظيفة تمامًا.',
         results: 'النتائج المفاجئة 🧫\n• المستعمرات الصفراء: يُحتمل أن تكون من نوع Staphylococcus aureus، وهي بكتيريا شائعة على الجلد والأسطح.\n• المستعمرات البيضاء أو الشاحبة: قد تكون من Staphylococcus epidermidis أو أنواع أخرى من الفلورا الجلدية المعتادة.\n• النقاط البرتقالية: قد تعود إلى بكتيريا مصبوغة مثل Serratia marcescens، تظهر عادة في الأماكن الرطبة.',
@@ -42,9 +39,6 @@ const BlogPost = () => {
     2: {
       title: isRTL ? 'استهلاك واهتراء المناشف العادية مقارنة بمناشف ساكورا للاستخدام الواحد 🌿' : 'Why SAKURA Single-Use Towels Are Better Than Traditional Towels',
       subtitle: isRTL ? '🧺 المناشف العادية: تكلفة خفية أكبر مما تتوقع' : '🧺 The Problem with Traditional Towels',
-      excerpt: isRTL 
-        ? 'قد تبدو المناشف العادية خيارًا اقتصاديًا، لكن الواقع مختلف'
-        : 'Traditional towels may seem affordable, but they come with hidden costs and health risks',
       content: isRTL ? {
         intro: 'قد تبدو المناشف العادية خيارًا اقتصاديًا، لكن الواقع مختلف:',
         problems: '• استهلاك عالي: تحتاج لغسيل متكرر بعد كل استخدام، ما يعني هدرًا للماء والكهرباء والمنظفات.\n• اهتراء سريع: مع كثرة الغسيل تبدأ الألياف بالضعف وتظهر الروائح.\n• مخاطر صحية: تصبح بيئة مثالية لتكاثر البكتيريا والفطريات، خصوصًا مع الرطوبة، مما يعرّض البشرة الحساسة أو المعرضة لحب الشباب لمشاكل إضافية.',
@@ -135,7 +129,7 @@ const BlogPost = () => {
         <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-12">
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-wrap items-center gap-2 sm:gap-4 mb-3 sm:mb-4 text-xs sm:text-sm text-muted-foreground">
-              <span className="bg-primary/10 text-primary px-2 py-1 sm:px-3 rounded-full text-xs">
+              <span className="bg-gray-800 text-white px-2 py-1 sm:px-3 rounded-full text-xs font-medium">
                 {post.category}
               </span>
               <div className="flex items-center gap-1 sm:gap-2">
@@ -154,11 +148,7 @@ const BlogPost = () => {
               {post.title}
             </h1>
             
-            <p className={`text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed ${
-              isRTL ? 'font-arabic text-right' : 'font-inter text-left'
-            }`}>
-              {post.excerpt}
-            </p>
+
           </div>
         </div>
       </div>
